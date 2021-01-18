@@ -2,10 +2,15 @@
 # 讓使用者重複輸入數字去猜
 # 猜對的話 印出 "終於猜對了!"
 # 猜錯的話 要告訴他 比答案大/小
+# 讓使用者自行決定範圍
 
 import random
+start = input('請決定開始值: ')
+end = input('請決定結束值: ')
+start = int(start)
+end = int(end)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 while True:
 	count = count + 1
